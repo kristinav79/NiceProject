@@ -57,7 +57,7 @@ To get test results report you need execute __NiceSolution/TestReport/TestReport
 * The TestReporting.bat file could be executed on pipeline, scheduled in Jenkins and etc.
 
 There is an example of test report : 
-![Report Eample](ReadmeHelper/ReportEample.png)
+![Report Eample](TestProject/ReadmeHelper/ReportEample.png)
 
 
 
