@@ -1,0 +1,54 @@
+=> TestProject.Features.DataFlowTestsFeature.SystemHasBeenStarted_OnLocalhost8080_ChartIsDisplayed
+Given the output folder is empty
+-> done: BlackBoxStepTestDefinitions.GivenTheOutputFolderIsEmpty() (0.0s)
+And BlackBox program is executed
+-> done: BlackBoxStepTestDefinitions.WhenBlackBoxProgramIsExecuted() (0.5s)
+And the output file has been created
+-> done: UIServerTestStepDefinition.ThenTheOutputFileHasBeenCreated() (0.0s)
+When Node server is started
+-> done: UIServerTestStepDefinition.WhenNodeServerIsStarted() (0.7s)
+Then UI server started successfully with string in log: "Server running at"
+-> done: UIServerTestStepDefinition.ThenUIServerStartedSuccessfullyWithStringInLog("Server running at") (0.0s)
+And the chart with id "chart_div" has been displayed
+-> done: UIServerTestStepDefinition.ThenChartHasBeenDisplayed("chart_div") (6.2s)
+=> TestProject.Features.DataFlowTestsFeature
+-> Using app.config
+=> TestProject.Features.SystemComponentTestFeature.BlackBoxProgramIsExecuted_OutputFileIsCreated
+Given the output folder is empty
+-> done: BlackBoxStepTestDefinitions.GivenTheOutputFolderIsEmpty() (0.0s)
+When BlackBox program is executed
+-> done: BlackBoxStepTestDefinitions.WhenBlackBoxProgramIsExecuted() (0.5s)
+Then program successfully finished to run with log: "Finished writing out results"
+-> done: UIServerTestStepDefinition.ThenProgramSuccessfullyFinishedToRun("Finished writing ...") (0.0s)
+And the output file has been created
+-> done: UIServerTestStepDefinition.ThenTheOutputFileHasBeenCreated() (0.0s)
+And output file is not empty
+-> done: BlackBoxStepTestDefinitions.ThenOutputFileIsNotEmpty() (0.0s)
+=> TestProject.Features.SystemComponentTestFeature.UIServerIsStarted_OnLocalhost_Successfully
+Given the output folder is empty
+-> done: BlackBoxStepTestDefinitions.GivenTheOutputFolderIsEmpty() (0.0s)
+Given server is NOT running on host "localhost" with port "8080"
+-> done: UIServerTestStepDefinition.GivenServerIsNOTRunningOnHostWithPort("localhost", 8080) (1.0s)
+When Node server is started
+-> done: UIServerTestStepDefinition.WhenNodeServerIsStarted() (0.4s)
+Then UI server started successfully with string in log: "Server running at"
+-> done: UIServerTestStepDefinition.ThenUIServerStartedSuccessfullyWithStringInLog("Server running at") (0.0s)
+And server is running on host "localhost" with port "8080"
+-> done: UIServerTestStepDefinition.GivenServerIsRunningOnHostWithPort("localhost", 8080) (0.0s)
+And the page title  "QA TASK" has been displayed
+-> done: UIServerTestStepDefinition.ThenPageTitleHasBeenDisplayed("QA TASK") (7.1s)
+=> TestProject.Features.SystemEndToEndTestsFeature.DataIntegrityVerification
+Given the output folder is empty
+-> done: BlackBoxStepTestDefinitions.GivenTheOutputFolderIsEmpty() (0.0s)
+And BlackBox program is executed
+-> done: BlackBoxStepTestDefinitions.WhenBlackBoxProgramIsExecuted() (0.4s)
+And the output file has been created
+-> done: UIServerTestStepDefinition.ThenTheOutputFileHasBeenCreated() (0.0s)
+When Node server is started
+-> done: UIServerTestStepDefinition.WhenNodeServerIsStarted() (0.5s)
+Then the chart with id "chart_div" has been displayed
+-> done: UIServerTestStepDefinition.ThenChartHasBeenDisplayed("chart_div") (8.3s)
+And chart bar with letter "o" value is "18"
+-> done: UIServerTestStepDefinition.ThenChartBarWithLetterValueIs("o", "18") (3.1s)
+And chart bar with letter "a" value is "25"
+-> done: UIServerTestStepDefinition.ThenChartBarWithLetterValueIs("a", "25") (3.1s)
